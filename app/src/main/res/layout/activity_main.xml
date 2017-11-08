@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.krzysztofkin.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/classpicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Empty classroom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/classroom" />
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        android:background="#00b8d4"
+        android:padding="16dp"
+        android:text="Where are everyone?"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/classpicture"
+        android:padding="16dp"
+        android:text="on www.udacity.com"
+        android:textColor="#00b8d4"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/url"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/adress_icon"
+        android:paddingTop="0dp"
+        android:text="Udacity" />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/udacity"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/adress_icon"
+        android:paddingTop="8dp"
+        android:text="2465 Latham St" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/street"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/adress_icon"
+        android:paddingTop="8dp"
+        android:text="Mountain View, CA 94043" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city"
+        android:layout_alignTop="@+id/phone_icon"
+        android:paddingTop="8dp"
+        android:text="650-555-5555" />
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/city"
+        android:src="@android:drawable/ic_menu_call" />
+
+    <ImageView
+        android:id="@+id/adress_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/url"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:src="@android:drawable/ic_menu_mapmode" />
+
+
+</RelativeLayout>
